@@ -1,0 +1,6 @@
+L1: MVI A,00;  A=0 in hex
+    MVI B,04; B=4 in hex
+L2: ADI 04; A+=4
+    DCR B;  B--
+    JNZ L2; If Zflag !=0, jump to L2
+    JMP L1; Jump to L1 to repeat            
