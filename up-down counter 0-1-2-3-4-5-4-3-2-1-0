@@ -1,5 +1,9 @@
-MVI A,00;  counter
-L1:  MVI B,05;  loop counter
+    MVI A,00;     counter
+L1: MVI B,05;     loop counter
 L2: INR A;	
-      DCR B;     
-      JNZ L2;  If Zflag !=0, jump to L2
+    DCR B;     
+    JNZ L2;       If Zflag !=0, jump to L2
+    MVI A, 4;
+L3: DCR A;
+      JNZ L3;	If Zflag !=0, jump to L3
+      JMP L1;	Jump to L1 (start all over)
