@@ -1,0 +1,5 @@
+MVI A,00;  counter
+L1:  MVI B,05;  loop counter
+L2: INR A;	
+      DCR B;     
+      JNZ L2;  If Zflag !=0, jump to L2
