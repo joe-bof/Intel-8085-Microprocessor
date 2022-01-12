@@ -1,4 +1,4 @@
-L1: MVI A,00;  A=0 in hex
+L1: MVI A,00; A=0 in hex
     MVI B,04; B=4 in hex
 L2: ADI 04; A+=4
     DCR B;  B--
